@@ -1,0 +1,100 @@
+section {
+    background: #ff1b68;
+}
+
+
+/* tag name */
+h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/* class name*/
+.blog-post
+{
+    color: red;
+}
+
+/* every element on a page */
+* {
+    color: red;
+}
+
+/* id selector */
+#el {
+    color: red;
+}
+
+/* disabled attribute every elements. ex <button disabled>*/
+[disabled] {
+    color: red;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: green;
+    background-color: yellow;
+    font-family: inherit;
+}
+
+/* any h1 tag inside #product id*/
+/* combinator */
+/* higher priority */
+#product h1 {
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+
+/* Priority */
+/* Inline Styles. ex <element style=""/>*/
+/* #ID selector*/
+/* .class, :pseudo-class and [attribute] selectors have highest priority*/
+/* tag and pseudo-element has lowest priority */
+
+
+
+/* Conbinators */
+/* + Adjacent Sibling */
+/* assign red to all p that follow after h2*/
+h2 + p {
+    color: red;
+}
+
+/* only a gets red color */
+div + p + a {
+    color: red;
+}
+
+/* ~ General Sibling */
+/* p gets red color then it has h2 sibling on the same level */
+h2 ~ p {
+    color: red;
+}
+
+/* > Child */
+/* p gets red color inside div on the first nested level */
+/* only for direct child */
+div > p {
+    color: red;
+}
+
+/* Descendant */
+/* p gets red color inside div on all nested levels */
+div p {
+    color: red;
+}
+
+
+/* Properties */
+/* Pre-defined Options */
+/* Color */
+/* Length, Sizes & Numbers */
+/* Functions : backgound: url(...),; transform: scale(...); */
+
+
+
+
